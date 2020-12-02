@@ -14,18 +14,14 @@ function App() {
       <div css={tw`md:w-content-md xl:w-content-lg max:w-content-max m-auto flex flex-grow flex-wrap flex-col md:flex-row justify-items-center`}>
         {appData.cards.map(item =>
           <Card
-            image={item.imageUrl}
+            key={item.id}
+            image={process.env.PUBLIC_URL + item.imageUrl}
             title={item.title}
             description={item.description}
-            buttonText={item.buttonText}
+            buttons={item.buttons}
+            siteUrls={item.siteUrls}
           />
         )}
-        <Card title="More Dummy Card" />
-        <Card title="More Dummy Card" />
-        <Card title="More Dummy Card" />
-        <Card title="More Dummy Card" />
-        <Card title="More Dummy Card" />
-        <Card title="More Dummy Card" />
       </div>
     </div>
   );

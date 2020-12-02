@@ -21,7 +21,9 @@ class Card extends Component {
         <div css={tw`px-3`}>
           <div css={tw`pb-2 flex flex-row`}>
             <H2 css={tw`leading-8 flex-auto`}>{this.props.title}</H2>
-            <Button>{this.props.buttonText}</Button>
+            {this.props.buttons.map(button =>
+              <Button css={tw`ml-1`} key={button.siteUrl} onClick={() => window.open(button.siteUrl)}>{button.text}</Button>
+            )}
           </div>
           <div css={tw`h-12`}>
             <p>{this.props.description}</p>
