@@ -248,7 +248,7 @@ Refs for Suffle algorithme
 */
 
 export const appData = {
-  pageTitle: '상상의 전시 - 서울대학교 미술대학 서양화과 회화Ⅱ',
+  pageTitle: '상상의 전시 - Imaginary Exhibition',
   cards: ((cards) => {
     for (let i = cards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

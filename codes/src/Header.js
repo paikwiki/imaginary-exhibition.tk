@@ -2,7 +2,7 @@ import { Component } from 'react';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro';
 
-const SiteHeadingText = tw.h1`pb-4 text-blue-500 text-2xl`;
+const SiteHeadingText = tw.h1`pb-4 text-blue-800 text-2xl`;
 
 class Header extends Component {
   render() {

@@ -5,8 +5,6 @@ import Header from './Header';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'
 
-
-
 function App() {
   return (
     <div className="App">
