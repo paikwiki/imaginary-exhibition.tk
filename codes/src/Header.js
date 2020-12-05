@@ -7,8 +7,8 @@ const SiteHeadingText = tw.h1`pb-4 text-blue-800 text-2xl`;
 class Header extends Component {
   render() {
     return (
-      <header css={tw`text-center`}>
-        <SiteHeadingText>{this.props.headingText}</SiteHeadingText>
+      <header css={tw`text-center py-4 mb-2`}>
+        <SiteHeadingText>{this.props.headerText}</SiteHeadingText>
       </header>
     );
   }

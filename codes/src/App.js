@@ -8,8 +8,10 @@ import { css } from 'styled-components/macro'
 
 function App() {
   return (
-    <div className="App">
-      <Header headingText={appData.pageTitle}/>
+    <div
+      css={tw`py-4`}
+      className="App">
+      <Header headerText={appData.headerText}/>
       <div css={tw`md:w-content-md xl:w-content-lg max:w-content-max m-auto mb-4 flex flex-grow flex-wrap flex-col md:flex-row justify-items-center`}>
         {appData.cards.map(item =>
           <Card

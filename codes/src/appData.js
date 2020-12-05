@@ -248,7 +248,7 @@ Refs for Suffle algorithme
 */
 
 export const appData = {
-  pageTitle: '상상의 전시 - Imaginary Exhibition',
+  headerText: '상상의 전시 - Imaginary Exhibition',
   footerText: `본 웹사이트는 2020학년도 2학기 서울대학교 미술대학 서양화과 "회화II" 수업의 결과물입니다.\n 모든 콘텐츠의 저작권은 각 창작자에게 있습니다.`,
   cards: ((cards) => {
     for (let i = cards.length - 1; i > 0; i--) {
