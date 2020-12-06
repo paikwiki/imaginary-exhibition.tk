@@ -6,7 +6,7 @@ import { appData } from './appData';
 class Footer extends Component {
   render() {
     return (
-      <footer css={tw`py-4 text-blue-600 text-center`}>
+      <footer css={tw`py-4 text-sm text-gray-500 text-center`}>
         <p>{
           this.props.footerText.split('\n').map( line => (
             <span key={line}>
